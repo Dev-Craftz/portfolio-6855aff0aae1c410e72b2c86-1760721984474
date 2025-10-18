@@ -283,6 +283,23 @@
       </div>
     </div>
   
+    <div class="bg-white rounded-3xl border-2 border-gray-100 overflow-hidden hover:border-teal-200 hover:shadow-2xl transition-all duration-500 group">
+      <div class="relative overflow-hidden">
+        <img src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/257873_phone_buying_guide_2_cvirginia.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C100&w=1080" alt="phone" class="w-full h-48 object-cover group-hover:scale-110 transition duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+      </div>
+      <div class="p-6">
+        <h3 class="font-bold text-xl mb-3 text-gray-800 group-hover:text-teal-700 transition-colors duration-300">phone</h3>
+        <p class="text-gray-600 mb-4 leading-relaxed">iphone</p>
+        <div class="flex justify-between items-center">
+          <span class="font-bold text-2xl text-teal-600">$456.00</span>
+          <button class="add-to-cart bg-teal-500 text-white px-5 py-2.5 rounded-2xl hover:bg-teal-600 hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-semibold" data-id="53329574-0224-4fc4-bebd-d990af4abf99">
+            <i class="fas fa-shopping-bag mr-2"></i>Add
+          </button>
+        </div>
+      </div>
+    </div>
+  
       </div>
     </div>
   </div>
@@ -442,6 +459,17 @@
       </td>
     </tr>
   
+    <tr class="hover:bg-teal-50 transition-colors duration-200 border-b border-gray-100">
+      <td class="py-4 px-6 text-gray-800 font-medium">phone</td>
+      <td class="py-4 px-6 text-gray-600">iphone</td>
+      <td class="py-4 px-6 text-teal-600 font-bold text-lg">$456.00</td>
+      <td class="py-4 px-6">
+        <button class="delete-product text-rose-500 hover:text-rose-600 transition-colors duration-200 transform hover:scale-110" data-id="53329574-0224-4fc4-bebd-d990af4abf99">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+      </td>
+    </tr>
+  
             </tbody>
           </table>
         </div>
@@ -543,7 +571,7 @@
   const ordersList = document.getElementById('orders-list');
   
   // Data
-  let products = [{"id":"1","name":"Wireless Headphones","description":"High-quality wireless headphones with noise cancellation","price":99.99,"image":"https://res.cloudinary.com/drc8bufjn/image/upload/v1760721986/ecommerce_products/kvyqbbzaqwo6744lnskl.png"}];
+  let products = [{"id":"1","name":"Wireless Headphones","description":"High-quality wireless headphones with noise cancellation","price":99.99,"image":"https://res.cloudinary.com/drc8bufjn/image/upload/v1760721986/ecommerce_products/kvyqbbzaqwo6744lnskl.png"},{"id":"53329574-0224-4fc4-bebd-d990af4abf99","name":"phone","description":"iphone","price":456,"image":"https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/257873_phone_buying_guide_2_cvirginia.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C100&w=1080"}];
   let currentUser = null;
   
   // Event Listeners
